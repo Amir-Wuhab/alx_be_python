@@ -1,7 +1,9 @@
 # Create a file named weather_advice.py
 
 # 1. Prompt the user for the current weather conditions.
-weather = input("What's the weather like today? (sunny/rainy/cold): ")
+# .strip() removes any accidental leading/trailing spaces.
+# .lower() converts the input to all lowercase (e.g., "Sunny" becomes "sunny").
+weather = input("What's the weather like today? (sunny/rainy/cold): ").strip().lower()
 
 # 2. Use conditional statements to provide clothing recommendations.
 if weather == "sunny":
