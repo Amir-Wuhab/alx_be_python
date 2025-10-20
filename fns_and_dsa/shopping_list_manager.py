@@ -19,13 +19,13 @@ def main():
             print("Invalid input. Please enter a number.")
             continue
 
-        if choice == 1:
+        if choice == '1':
             
             item = input("Enter the item to add: ")
             shopping_list.append(item)
             print(f"'{item}' was added to the list.")
             
-        elif choice == 2:
+        elif choice == '2':
             
             item = input("Enter the item to remove: ")
             if item in shopping_list:
@@ -34,7 +34,7 @@ def main():
             else:
                 print(f"'{item}' not found in the list.")
 
-        elif choice == 3:
+        elif choice == '3':
             
             if not shopping_list:
                 print("The shopping list is currently empty.")
@@ -44,7 +44,7 @@ def main():
                     print(f"{index}. {item}")
                 print("------------------------")
 
-        elif choice == 4:
+        elif choice == '4':
             print("Goodbye!")
             break
         else:
